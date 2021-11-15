@@ -9,46 +9,27 @@ body {
     background-color: blanchedalmond;
 }
 
-#slide-container{
-    width: 800px;
-    height: 100vh;
-    margin: auto;
-    border-radius: 15px;
-    border: 0px solid white;
+.slide-container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;  
+    height: 300px;
+    width: 750px;
     overflow: hidden;
+    box-shadow: none;
+}
+ 
+.slide-container .image-holder{
+    height: 100%;
+    width: 100%;
 }
 
-#image-holder{
-    width: 6400px;
-    position: relative;
-    animation: animate 20s none infinite;
-}
-
-
-@keyframes img{
-    0%{
-        left: 0;
-    }
-    20%{
-        left: 100%;
-    }
-    40%{
-        left: 200%;
-    }
-    60%{
-        left: 300%;
-    }
-    80%{
-        left: 400%;
-    }
-    100%{
-        left: 0;
-    }
-}
-
-
-#image-holder{
-    float: left;
+.image-holder img{
+    height: 100%;
+    width: 100%;
 }
   
 
